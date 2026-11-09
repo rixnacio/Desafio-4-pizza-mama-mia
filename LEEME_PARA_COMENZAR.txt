@@ -1,0 +1,30 @@
+HITO 4 - PIZZERIA MAMMA MIA
+
+El proyecto contiene dos carpetas: frontend (React) y backend (API entregada por Desafio Latam).
+
+ANTES DE EJECUTAR:
+- Necesitas tener Node.js instalado.
+- No abras index.html con doble clic.
+- Debes mantener abiertas dos terminales: una para el backend y otra para React.
+
+1. LEVANTAR EL BACKEND
+- Abre VS Code en la carpeta backend.
+- Abre una terminal dentro de esa carpeta.
+- Ejecuta: npm install
+- Cuando termine, ejecuta: npm start
+- Deja esa terminal abierta. El servidor debe indicar que funciona en http://localhost:5000
+
+2. LEVANTAR REACT
+- Abre otra ventana de VS Code (o una segunda terminal) en la carpeta frontend.
+- Ejecuta: npm install
+- Cuando termine, ejecuta: npm run dev
+- Abre en Chrome la direccion que Vite muestre, normalmente http://localhost:5173
+
+3. PROBAR
+- Home debe mostrar las pizzas que llegan desde http://localhost:5000/api/pizzas
+- El boton 'Pizza p001' debe mostrar los datos de la pizza solicitada desde http://localhost:5000/api/pizzas/p001
+
+IMPORTANTE
+El backend debe estar encendido mientras pruebas React. Si React muestra un mensaje de que no puede cargar las pizzas, revisa que la terminal del backend siga ejecutando npm start.
+
+Para el Hito 4 se incorporo useEffect y fetch en Home.jsx y Pizza.jsx. El arreglo de pizzas ya no se utiliza para construir el catalogo; el arreglo pizzaCart se conserva para no romper la vista de carrito del proyecto anterior.
